@@ -9,5 +9,5 @@ data.setDescription('Este comando serve para o bot dar um boas');
 
 //Esta função vai ser executada assim que alguem meter o comando boas
 export async function execute(interaction) {
-    await interaction.reply('Register?');
+    await interaction.reply('Mekie');
 }
