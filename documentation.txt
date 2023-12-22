@@ -1,0 +1,2 @@
+node index.js -> Para correr o programa
+node deploy-commands.js -> Para implementar todos os comandos no bot
