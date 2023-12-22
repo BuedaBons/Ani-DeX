@@ -1,6 +1,7 @@
 import {Client, Events, GatewayIntentBits } from 'discord.js';
 import { config } from 'dotenv';
 import * as boas from './commands/boas.js';
+import * as play from './commands/play.js';
 
 config();
 
@@ -17,6 +18,17 @@ async function handleInteraction(interaction) {
     if(!interaction.isCommand()) return;
     if(interaction.commandName === 'boas') {
        await boas.execute(interaction);
+    }
+}
+
+function readyDiscord() {
+    console.log('Play ' + client.user.tag);
+}
+
+async function handleInteraction(interaction) {
+    if(!interaction.isCommand()) return;
+    if(interaction.commandName === 'play') {
+       await play.execute(interaction);
     }
 }
 
