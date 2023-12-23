@@ -19,17 +19,9 @@ async function handleInteraction(interaction) {
     if(interaction.commandName === 'boas') {
        await boas.execute(interaction);
     }
-}
-
-function readyDiscord() {
-    console.log('Play ' + client.user.tag);
-}
-
-async function handleInteraction(interaction) {
-    if(!interaction.isCommand()) return;
     if(interaction.commandName === 'play') {
-       await play.execute(interaction);
-    }
+        await play.execute(interaction);
+     }
 }
 
 //Este comando é só para comandos que acontecem só uma vez
